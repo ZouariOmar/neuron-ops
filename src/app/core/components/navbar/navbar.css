@@ -1,0 +1,40 @@
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background: var(--bg-dark);
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 1.7rem;
+  font-family: 'Montserrat';
+}
+
+.navbar span {
+  color: var(--tech-blue);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--tech-blue);
+}
+
+.contact-btn {
+  padding: 8px 16px;
+  background: var(--gradient-main);
+  border-radius: 6px;
+}

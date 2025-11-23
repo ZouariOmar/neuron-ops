@@ -1,0 +1,20 @@
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 40px;
+}
+
+.card {
+  padding: 30px;
+  background: var(--bg-dark);
+  color: white;
+  border-radius: 10px;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--tech-blue);
+}
