@@ -1,13 +1,52 @@
 <nav class="navbar">
   <div class="logo">Neuron<span>Ops</span></div>
-  <ul>
-    <li><a routerLink="/" href="#">Home</a></li>
-    <li><a routerLink="/about">About</a></li>
-    <li><a routerLink="/services">Services</a></li>
-    <li><a routerLink="/secteurs">Sectors</a></li>
-    <li><a routerLink="/ops">OPS Methodology</a></li>
-    <li><a routerLink="/etudes-de-cas">Case Studies</a></li>
-    <li><a routerLink="/blog">Blog</a></li>
-    <li><a routerLink="/contact" class="contact-btn">Contact</a></li>
+  <div class="menu-toggle" (click)="toggleMenu()">☰</div>
+
+  <ul [class.active]="menuOpen">
+    <li>
+      <a routerLink="/">
+        <span class="material-symbols-outlined">home</span>
+        Home
+      </a>
+    </li>
+    <li>
+      <a routerLink="/about">
+        <span class="material-symbols-outlined">info</span>
+        About
+      </a>
+    </li>
+    <li>
+      <a routerLink="/services">
+        <span class="material-symbols-outlined">build_circle</span>
+        Services
+      </a>
+    </li>
+    <li>
+      <a routerLink="/sectors">
+        <span class="material-symbols-outlined">business</span>
+        Sectors
+      </a>
+    </li>
+    <li>
+      <a routerLink="/ops">
+        <span class="material-symbols-outlined">school</span>
+        OPS Methodology
+      </a>
+    </li>
+    <li>
+      <a routerLink="/etudes-de-cas">
+        <span class="material-symbols-outlined">fact_check</span>
+        Case Studies
+      </a>
+    </li>
+    <li>
+      <a routerLink="/blog">
+        <span class="material-symbols-outlined">article</span>
+        Blog
+      </a>
+    </li>
+    <li>
+      <a routerLink="/contact" class="contact-btn">Contact</a>
+    </li>
   </ul>
 </nav>
