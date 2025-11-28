@@ -9,4 +9,10 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.css',
 })
 
-export class Navbar { }
+export class Navbar {
+  public menuOpen: boolean = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+} // Navbar class
