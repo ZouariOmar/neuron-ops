@@ -3,11 +3,11 @@ import { Navbar } from '../../core/components/navbar/navbar';
 import { Footer } from '../../core/components/footer/footer';
 
 @Component({
-  selector: 'app-cases',
+  selector: 'app-blog',
   standalone: true,
   imports: [Navbar, Footer],
-  templateUrl: './cases.html',
-  styleUrl: './cases.css',
+  templateUrl: './blog.html',
+  styleUrl: './blog.css',
 })
 
-export class Cases { }
+export class Blog { }
