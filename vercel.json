@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "neuron-ops",
+  "public": true,
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "dist/neuron-ops/**"
+    }
+  }
+}
