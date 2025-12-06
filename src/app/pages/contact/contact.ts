@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
-import { environments } from '../../../environments/environments.prod';
+import { environment } from '../../../environments/environment';
 import { Footer } from '../../core/components/footer/footer';
 import { Navbar } from '../../core/components/navbar/navbar';
 
@@ -20,7 +20,7 @@ export class Contact {
   public errorMessage: string;
 
   constructor() {
-    this.calendlyUsername = environments.calendlyUsername;
+    this.calendlyUsername = environment.calendlyUsername;
     this.isLoading = false;
     this.successMessage = '';
     this.errorMessage = '';
@@ -40,10 +40,10 @@ export class Contact {
     };
 
     emailjs.send(
-      environments.emailJsServiceId,
-      environments.emailJsTemplateId,
+      environment.emailJsServiceId,
+      environment.emailJsTemplateId,
       templateParams,
-      { publicKey: environments.emailJsPublicKey }
+      { publicKey: environment.emailJsPublicKey }
     )
       .then(() => {
         this.isLoading = false;
