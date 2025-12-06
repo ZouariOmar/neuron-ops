@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
-import { environments } from '../../../environments/environments';
+import { environments } from '../../../environments/environments.prod';
 import { Footer } from '../../core/components/footer/footer';
 import { Navbar } from '../../core/components/navbar/navbar';
 
